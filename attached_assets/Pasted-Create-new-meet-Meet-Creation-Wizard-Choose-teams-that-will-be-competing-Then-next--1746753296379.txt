@@ -1,0 +1,24 @@
+Create new meet
+* Meet Creation Wizard
+    * Choose teams that will be competing! Then next
+        * Have the coach’s team already selected and added to the list (teams can be removed hit a minus sign and confirm)
+        * Add a team button should allow the user to type in the name or url of the school and pull from the ripscore db if they are a user if not available give the option to send an invite to the coach or add a manual entry
+        * For manual entry of team option pop open a modal have a super simple form (Team Name, Coach first and last name and email, athlete first name last name, email optional for results option to add an additional athlete name/line by clicking a button when done click save and the data should be visible in the teams competing with the option to add another team
+    * Event Setup? Check box select or highlight option - 1m, 3m, tower (Only show tower as an option for teams that are Division 1) and 6 or 11 dive meet toggle - next
+    * Mens and or women’s events selection 
+    * Choose event order
+        * Need to figure out a clean beautiful way to display this
+        * Generally you will combine Mens 3m and women’s 1m and vice versa and run two events but you should be able to choose 
+    * Meet settings
+        * Number of judges drop down select 1, 2,3, 5, 7,9 or some sort of selection that is intuitive
+        * Toggle judging option - individual judging pads or score on this device
+        * AI announcing and meet running on or off
+        * Live scoring view toggle on or off if on then suggest a meet slug “ripscore.app/live/“[UnionVsVassar2025] have the part in the square braces be editable
+        * Begin Meet
+    * If the individual judging pad option was chosen then show QR code for the judges to Scan
+        * QR code should take the judges device to a screen that logs them into the judging pad
+    * Load meet running screen there should be a well laid out screen that shows all relevant info to run a dive meet - show current diver scores and the option to edit a dive in the middle of the meet there also should be a button to renounce the dive
+        * Beginning with the AI meet runner the AI voice (maybe we can use VAPI) would run the meet like a human. “ Good morning and welcome everyone to today meet between Union and Vassar, please refrain from flash photography during the competition” “We will begin today’s competition with Mens 3m and womens 1m” Megan from Union College will be performing 105c Forward 2.5 ss tuck on deck Steven”
+        * The ai voice would then read the judges scores once entered from the judging pads or from the device and say “Judges scores 7,7,6” and then launch into announcing the next diver
+        * After the last diver the ai announcer would say “this concludes the mens 3m and women’s 1m” the announcer would proceed to read the scores off in reverse place order
+        * The human running the meet would have the option to move to the next event or finish the meet and post the scores at the conclusion of the meet results should be emailed immediately to all parties that participated in the meet both links and actual pdf generated sheets from the meet

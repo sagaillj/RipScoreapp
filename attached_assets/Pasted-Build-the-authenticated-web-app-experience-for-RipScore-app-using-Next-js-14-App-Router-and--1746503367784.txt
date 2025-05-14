@@ -1,0 +1,125 @@
+Build the authenticated web app experience for RipScore.app using **Next.js 14 (App Router)** and **Tailwind CSS**.
+
+This is a SaaS platform for scoring and managing competitive diving meets. The app includes dashboards and role-specific views for coaches, divers, and judges.
+
+Use the “Neon Precision” color palette:
+
+```js
+extend: {
+  colors: {
+    midnight: '#0B1120',   // background
+    aqua: '#00F0FF',       // primary CTA
+    orange: '#FFB038',     // accent color
+    slate: '#8A9BA8',      // body text
+    mist: '#F4F6F8',       // card backgrounds
+    success: '#23D18B',
+    warning: '#FFB038',
+    error: '#FF3B30',
+  },
+}
+🧭 App Routes (App Router structure preferred)
+Shared Layout
+/app — main layout with sidebar nav + top bar
+
+Authenticated user pulled via context or mocked for now
+
+👨‍🏫 Coach/Team Admin
+/app/dashboard
+
+Team stat summary, next meet CTA
+
+/app/roster
+
+Grid of athlete cards → /roster/:id for dive history, goals
+
+/app/meets
+
+List of meets (past & upcoming)
+
+Button to /meets/new
+
+/app/meets/:id
+
+Meet manager: event order, run meet, score sync
+
+/app/schedule
+
+Season calendar, warm-up/travel planner
+
+/app/settings
+
+Team info, rule set, billing (Stripe badge)
+
+/app/analytics
+
+Graphs of scoring trends, dive performance
+
+🧍‍♂️ Diver
+/app/dashboard
+
+Next meet, action items, team quote
+
+/app/my-dives
+
+Dive sheet builder + “unlocked” dive list
+
+/app/performance
+
+Best/worst dives, AI tips
+
+/app/goals
+
+Season + skill goals
+
+/app/archive
+
+Past meet results, notes, video links (optional)
+
+/app/team
+
+Team leaderboard, encouragement, team bests
+
+🧑‍⚖️ Judge
+/judge/:meetId
+
+Minimal score entry UI
+
+Dive code, DD, scoring pad
+
+Optional login to archive history
+
+🧩 Components to Build
+Sidebar.tsx – Sticky sidebar nav with role-based links
+
+TopBar.tsx – Page title + user profile dropdown
+
+AthleteCard.tsx – Used in roster grid
+
+MeetCard.tsx – Used in meet list
+
+DiveListEditor.tsx – Add/edit dives for athletes
+
+ScoreEntryPad.tsx – Judge scoring component
+
+LineChart.tsx – Team/dive analytics chart
+
+GoalTracker.tsx – View + update goal progress
+
+TeamLeaderboard.tsx – Diver rankings by meet
+
+🧱 Project Requirements
+Use Tailwind throughout
+
+Modular page & component layout
+
+Use placeholder/mock data for now
+
+Include dark + light mode toggle (if easy)
+
+Ensure layout is mobile-responsive
+
+📥 User Context (Mock or Real Auth)
+Use a simple user context with the following roles: coach, diver, judge.
+Show different nav + dashboard views based on the role. Use mock session for now.
+
+Generate all routes and pages scaffolded, components outlined above, and basic context setup. Add comments where appropriate for clarity. Ensure it's expandable and testable.

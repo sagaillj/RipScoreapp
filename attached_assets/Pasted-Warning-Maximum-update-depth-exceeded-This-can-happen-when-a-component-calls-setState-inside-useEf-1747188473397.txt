@@ -1,0 +1,31 @@
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn&#x27;t have a dependency array, or one of the dependencies changes on every render.
+    at https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2ICYI3C4.js?v=fe32dd88:1931:13
+    at https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-dropdown-menu.js?v=fe32dd88:151:13
+    at https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-dropdown-menu.js?v=fe32dd88:950:13
+    at Provider (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=fe32dd88:38:15)
+    at Provider (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=fe32dd88:38:15)
+    at Provider (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=fe32dd88:38:15)
+    at Popper (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2ICYI3C4.js?v=fe32dd88:1923:11)
+    at Menu (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-dropdown-menu.js?v=fe32dd88:105:11)
+    at Provider (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=fe32dd88:38:15)
+    at DropdownMenu (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-dropdown-menu.js?v=fe32dd88:916:5)
+    at div
+    at TeamSwitcher (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/src/pages/team.tsx?t=1747188335508:112:3)
+    at div
+    at div
+    at div
+    at div
+    at div
+    at div
+    at div
+    at DashboardLayout (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/src/components/layout/DashboardLayout.tsx:270:35)
+    at Team (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/src/pages/team.tsx?t=1747188335508:351:21)
+    at ProtectedRoute (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/src/components/auth/ProtectedRoute.tsx:22:14)
+    at Route (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=fe32dd88:265:16)
+    at Switch (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=fe32dd88:321:17)
+    at Router
+    at Provider (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=fe32dd88:38:15)
+    at TooltipProvider (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=fe32dd88:68:5)
+    at AuthProvider (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/src/hooks/use-auth.tsx:26:32)
+    at QueryClientProvider (https://ca2797b3-29e2-4ba7-9dfa-c595ac2b2f89-00-2xfjluxyvmdlu.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=fe32dd88:2805:3)
+    at App

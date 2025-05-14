@@ -1,0 +1,25 @@
+General note for replit as we build the goal throughout the application is to ask for only needed information and Ideally only once, we should make inferences and suggestions to guide the user wherever possible to help cut down on the work the user needs to do CX is king!
+ Schedule
+* New Season creation wizard
+* Season cycles
+    * Check box select and start date
+    * Preseason
+    * Regular Season
+    * Post Season
+    * Off Season
+* Meets
+    * A place for the user to enter all of the meets for the season, have one line with the ability to add more with one click:
+    * Opponent, home or away toggle, pre regular or post season toggle, date and start time
+* Season Visualization
+    * After inputing all of this info show some sort of beautiful horizontal visualization that Lays out the whole season and above it display a title based on the year of the start date and end date we would name the Season we are creating {Team Name} if start year of pre season and off season are the same then it would be “Union College 2025 Diving Season” but if they are different it should read team name + pre season start year + - + off season start year + Diving season. ie “Union College 2025-2026 Diving Season”
+* This is the default basic info needed but the user should have an option to continue to add more season detail for keeping their divers updated
+    * Scheduled Practices
+    * Default Meet itineraries - detailed itineraries including packing lists, travel schedules, hydration recomendations, pre meet warm up routines, and more the whole idea is getting one percent better if we can master the little things it will allow us to have mental space for the meets and high performance
+    * If you have any other ideas here feel free to add but I think that would be a great start
+* Set Default Practice Schedule
+    * Weightroom
+    * Dryland and stretching
+    * Diving Practice
+    * Visualization and Mental Training
+    * Other (PT, FMS Audit, beginning or end of a certain training peridization etc) 
+Once the wizard is completed and all the information has been added lets add the season title to the top of the /coach/schedule page there should be a caret drop down to the right to add a new season similar to the team title on the /team page  There should also be a gear in the top right to end or archive a season and the ability to pop open a modal and edit the season name and dates and some of the other info collected in the wizard  Below the title should be the season visualization laid out with key points and sections highlighted and then below that a list view in chronological order of the team meet schedule  I am thinking that since there is a lot of data to be displayed maybe we add some tabs so things don’t get too cluttered maybe one tab and view for the list of meets for the season if you click on one of the meet line items then we should pop open a full info modal on that meet for now we should see the meet name which would be Home team vs away team and the year of the competition the home teams coach and list of divers on the left and the away team’s info on the right. Each diver in the list should have an indicator of whether or not their lists have been filled out approved and finalized for the upcoming meet. This might be a lot for a modal so maybe a separate meet page for each meet object would be good with an easy back button to get back to the list of meets for the season  One other thing that needs to show up on the detailed meet page is the default itinerary with an option to edit and change   The other tab should be practice schedules we should see defaults at the top with a view of the week and what is planned we should also have the ability to add programming to the individual practices on the schedule  Eventually all of this could be viewed by the athletes in their portals  I think this is a great start lets build this out Please do not touch anything unrelated to what I have outlined here only edit or modify what is needed to accomplish what was mentioned

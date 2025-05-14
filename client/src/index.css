@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-appear {
+  animation: appear 1s ease-out;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s infinite;
+}
+
+:root {
+  /* Pre-login colors - lighter, airier */
+  --color-background-pre: #f8f9ff;
+  --color-text-pre: #1a1a2e;
+  --color-accent-pre: #00f0ff;
+  --color-accent-pink: #ff5fa2;
+  --color-accent-orange: #ff8a00;
+  --color-primary-pre: #0b1120;
+  
+  /* Post-login colors - richer, more professional */
+  --color-background-post: #0f172a;
+  --color-card-post: #1e293b;
+  --color-text-post: #f8f9ff;
+  --color-muted-post: #94a3b8;
+  --color-border-post: #334155;
+  --color-accent-post: #0ea5e9;
+  --color-accent2-post: #ff5fa2;
+  --color-success-post: #10b981;
+  --color-warning-post: #fbbf24;
+  --color-error-post: #ef4444;
+  
+  /* General colors */
+  --color-aqua: #00f0ff;
+  --color-pink: #ff5fa2;
+  --color-orange: #ff8a00;
+  --color-midnight: #0B1120;
+  --color-primary: #0ea5e9;
+  --color-success: #22c55e;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+}
+
+/* Pre-login specific styles */
+.pre-login {
+  background-color: var(--color-background-pre);
+  color: var(--color-text-pre);
+}
+
+.pre-login .hero-section {
+  background: linear-gradient(135deg, var(--color-primary-pre) 0%, #111e37 100%);
+}
+
+.pre-login .accent {
+  color: var(--color-accent-pre);
+}
+
+.pre-login .accent-pink {
+  color: var(--color-accent-pink);
+}
+
+/* Post-login dashboard styles */
+.dashboard {
+  background-color: var(--color-background-post);
+  color: var(--color-text-post);
+}
+
+.dashboard .card {
+  background-color: var(--color-card-post);
+  border: 1px solid var(--color-border-post);
+}
+
+.dashboard .text-muted {
+  color: var(--color-muted-post);
+}
+
+.dashboard .accent {
+  color: var(--color-accent-post);
+}
+
+.dashboard .accent-pink {
+  color: var(--color-accent2-post);
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out;
+  animation-fill-mode: both;
+}
+
+/* Add delay to animation sequences */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* RipScore Custom Theme Colors */
+:root {
+  /* Base theme colors */
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+  --primary: 188 100% 50%;  /* aqua: #00F0FF */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 38 100% 61%; /* orange: #FFB038 */
+  --secondary-foreground: 222 47% 11%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%; /* slate: #8A9BA8 */
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 188 100% 50%; /* aqua */
+  --radius: 0.5rem;
+
+  /* Success, warning and error colors */
+  --success: 153 75% 47%; /* #23D18B */
+  --warning: 38 100% 61%; /* #FFB038 */
+  --error: 3 100% 59%; /* #FF3B30 */
+
+  /* RipScore custom colors */
+  --midnight: 217 40% 8%; /* #0B1120 */
+  --aqua: 188 100% 50%; /* #00F0FF */
+  --orange: 38 100% 61%; /* #FFB038 */
+  --slate: 206 15% 60%; /* #8A9BA8 */
+  --mist: 210 22% 96%; /* #F4F6F8 */
+
+  /* Chart colors */
+  --chart-1: 188 100% 50%;
+  --chart-2: 38 100% 61%;
+  --chart-3: 217 40% 8%;
+  --chart-4: 206 15% 60%;
+  --chart-5: 210 22% 96%;
+
+  /* Sidebar colors (matching main theme) */
+  --sidebar-background: 217 40% 8%;
+  --sidebar-foreground: 210 22% 96%;
+  --sidebar-primary: 188 100% 50%;
+  --sidebar-primary-foreground: 210 40% 98%;
+  --sidebar-accent: 38 100% 61%;
+  --sidebar-accent-foreground: 222 47% 11%;
+  --sidebar-border: 217 33% 15%;
+  --sidebar-ring: 188 100% 50%;
+}
+
+.dark {
+  --background: 217 40% 8%; /* midnight */
+  --foreground: 210 22% 96%; /* mist */
+  --card: 217 44% 12%;
+  --card-foreground: 210 22% 96%;
+  --popover: 217 44% 12%;
+  --popover-foreground: 210 22% 96%;
+  --primary: 188 100% 50%; /* aqua */
+  --primary-foreground: 217 40% 8%;
+  --secondary: 38 100% 61%; /* orange */
+  --secondary-foreground: 217 40% 8%;
+  --muted: 217 33% 15%;
+  --muted-foreground: 206 15% 60%; /* slate */
+  --accent: 217 33% 15%;
+  --accent-foreground: 210 22% 96%;
+  --destructive: 0 68% 51%;
+  --destructive-foreground: 210 22% 96%;
+  --border: 217 33% 15%;
+  --input: 217 33% 15%;
+  --ring: 188 100% 50%; /* aqua */
+
+  /* Chart colors in dark mode */
+  --chart-1: 188 100% 50%;
+  --chart-2: 38 100% 61%;
+  --chart-3: 210 22% 96%;
+  --chart-4: 206 15% 60%;
+  --chart-5: 217 33% 15%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Smooth scrolling */
+  html {
+    @apply scroll-smooth;
+  }
+
+  /* Custom focus outlines for accessibility */
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  }
+}
+
+/* Animation utility classes */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  .animate-slide-right {
+    animation: slideRight 0.8s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideRight {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}

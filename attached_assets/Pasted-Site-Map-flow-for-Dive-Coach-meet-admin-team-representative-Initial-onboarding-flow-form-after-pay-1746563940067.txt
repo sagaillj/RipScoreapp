@@ -1,0 +1,71 @@
+Site Map/flow for Dive Coach/meet admin/team representative
+* Initial onboarding flow/form after payment is accepted
+    * Drop your University URL or eventually pull it from the billing process
+    * Magic - send some ai agents to go scrape data
+    * Automatically pull in 
+        * Coach Info first name last name email head shot
+        * Team info, Division, events, Rule sets, season schedule
+        * Team roster - first name last name, headshot, email, dob, graduation year, parent names/emails
+* Team Dashboard/home/run meet? - view upcoming meets, past meet highlights, days till champs
+    * Team tab
+    * Judge tab
+    * Schedule tab - team calendar of events, way to add athletes on the roster to the meet and ask them to write and order their lists
+    * Settings - School info, Division, conference, NCAA cut, event records
+    * Diving Data / Meet review - Team Trends total points scored new dives competed scoring trends Number of dives unlocked as a team
+    * Profile/billing
+* Team - roster of athletes on cards - individual pages with info about each athlete season averages dive averages records videos etc.. basically everything we have on the athlete
+* Schedule 
+    * Season planning 
+    * Meet and champ schedules / Itineraries for travel warm ups etc
+    * Practice planning periodization
+* Run Meet? 
+
+Meet Runner Section
+* Meet prep wizard
+* Confirm/edit meet settings
+    * Events
+    * Judges - if more than 1 judge choose if we will hook up remote scoring devices or score from one device
+    * AI Meet announcing
+* Confirm Event Order and combination -> Begin
+* Meet Runner main Screen - Clean view of: 
+    * Current diver with dive number dd individual judge scores etc
+    * diver on deck
+    * Meet announcement options
+        * Set timer and Meet will begin in 5 mins last diver on the board - Maybe silly or try later
+        * Begin meet “Good morning and Welcome to the meet between”
+        * Run meet with AI voice - “Jeremy will be doing 105c Forward 2.5 ss tuck 2.2 on deck John”
+        * Once scores are inputted automatically read scores and announce next diver and the dive they will be performing
+        * When event is finished show results and ask if any changes need to be made before finalizing and publishing
+        * Then move to the next event or conclude the meet
+        * Once all events are published have an option for a referee sign off
+        * One button push email the signed and completed sheets to the other coach and all athletes as well as post meet results online
+* Meet analytics view
+
+
+
+Site Map/flow for Diver 
+* Should accept an invite from coach
+* Auto pulls basic info - School, grad year, etc
+* Beautiful animation and UI throughout 
+
+Dashboard
+* Prominent team logo and team quote or ethos
+* Upcoming meet and to do if they need to create edit or approve lists
+
+Other pages on the left side
+* AI recommendations - Dives to work on, drills
+* Review last meet - best dive worst dive what is trending up and down Where you are vs your season goals
+* Team view and how you can encourage a teammate Team bests etc gross team score from last meet
+* Mental coaching and prep?
+* Archive - previous meets scores videos etc, notes 
+* Default lists
+* Goals - Season goals, dive goals to do and to compete scores meets etc
+* Dive Sheet - What dives I can do basically a full DD sheet - Keeping track of what dives you have “unlocked”
+* Settings/profile - headshot, Season goals, career goals, Fitness and flexibility goals Mental toughness and mind gym goals    Long term features
+* Add some sort of video component where we can live stream but also auto clip the whole meet and save the dive videos to the divers profiles
+* Could emphasize the social element. Could have a profile for each diver that could be public and searched for recruiting and just sharing with family and friends
+* Could add practice video as well - eventually maybe a computer vision component where ai knows or recognizes the person and can create a reel of each practice for the divers to watch back but could also track stats like
+    * Number of entries
+    * And eventually even certain dives
+    * To start even being able to track volume or balks would be incredible
+    * Maybe could hook into the team video play back system or even add that in as a feature

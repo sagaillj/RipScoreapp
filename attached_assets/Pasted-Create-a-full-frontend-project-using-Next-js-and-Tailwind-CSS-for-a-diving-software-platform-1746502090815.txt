@@ -1,0 +1,150 @@
+Create a full frontend project using **Next.js** and **Tailwind CSS** for a diving software platform called “RipScore.app”.
+
+This project should include:
+
+---
+
+## ✅ General Setup
+
+- Use **Next.js 14+ (App Router preferred)**  
+- Use **Tailwind CSS** with a **custom color theme** (see below)  
+- Set up a **shared layout** with a sticky header + footer  
+- Implement all pages as responsive, mobile-first  
+- Use **modular components** (e.g., Header, Footer, PageWrapper, Button, Card, SectionTitle)
+
+---
+
+## 🎨 Custom Tailwind Theme (add to tailwind.config.js)
+
+```js
+extend: {
+  colors: {
+    midnight: '#0B1120',     // background
+    aqua: '#00F0FF',         // primary
+    orange: '#FFB038',       // secondary
+    slate: '#8A9BA8',        // body text
+    mist: '#F4F6F8',         // light backgrounds/cards
+    success: '#23D18B',
+    warning: '#FFB038',
+    error: '#FF3B30',
+  },
+},
+📄 Pages to Build (under /app or /pages)
+1. / – Home (Landing Page)
+Hero section: bold headline, subhead, CTAs
+
+Features section: “Effortless Meet Management”, “Real-Time Judging”, “Athlete Dashboards”
+
+Live preview section: "See RipScore in Action"
+
+Pricing teaser
+
+Sticky header, dark footer
+
+2. /about – About Us
+Brief story of the platform
+
+Mission, values
+
+Meet the team (placeholder cards)
+
+3. /pricing – Pricing
+Title: “Simple Pricing for Teams That Want to Win”
+
+Pricing table:
+
+Base team license: $399
+
+Additional diver: $99
+
+FAQ section
+
+Stripe integration badge (placeholder)
+
+4. /live – Live Meet Results
+Public leaderboard layout
+
+Filter by meet, team, or athlete
+
+(Can be static placeholder data for now)
+
+Light and dark view switcher (if easy)
+
+5. /judge – Judge Score Pad
+Minimal page that opens score input UI
+
+Text: “Scan QR code to score”
+
+Optional login for judge profile
+
+Use /judge/:meetId pattern if dynamic routing supported
+
+6. /contact – Contact Us
+Form: name, email, message
+
+Send via email (mocked or real)
+
+Map or company contact details
+
+7. /login – Authentication Entry
+Clean login/signup UI
+
+Tabs for: Coach | Diver | Judge
+
+Placeholder for auth integration (Clerk/Auth0)
+
+🧩 Components to Build
+Header.tsx – Navigation bar with logo and nav links (sticky)
+
+Footer.tsx – Clean footer with links and copyright
+
+HeroSection.tsx – Used on homepage
+
+FeatureGrid.tsx – 3-column responsive layout
+
+PricingTable.tsx – Card-based pricing blocks
+
+ContactForm.tsx – Contact input + validation
+
+Leaderboard.tsx – Table or card layout for scores
+
+JudgePad.tsx – Number pad UI component (can be static for now)
+
+📱 Responsive Design Requirements
+Mobile first
+
+Burger menu navigation
+
+Hover states + focus outlines
+
+Test on iPhone and Android breakpoints
+
+✨ Style + UX Guidelines
+Use midnight as the base background (for hero/footer)
+
+Use aqua as primary CTA
+
+Use orange as accent/highlight
+
+Use slate for body text, mist for cards/inputs
+
+Smooth scrolling
+
+Animate hero and CTA buttons on page load
+
+🧪 Optional Enhancements
+Add a dark/light mode toggle
+
+Include mock leaderboard data for /live
+
+Use placeholder icons/images for UI polish
+
+Generate the full project with:
+
+Tailwind config set up
+
+Pages and components scaffolded
+
+Styles applied inline or via utility classes
+
+Comments where appropriate

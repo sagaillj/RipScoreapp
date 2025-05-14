@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 214 33% 97%; /* Light background */
+    --foreground: 224 71% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 4%;
+    --primary: 183 100% 50%; /* Aqua from Neon Precision */
+    --primary-foreground: 224 71% 4%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 224 71% 4%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 36 100% 61%; /* Orange from Neon Precision */
+    --accent-foreground: 224 71% 4%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 183 100% 50%; /* Aqua from Neon Precision */
+    --radius: 0.5rem;
+
+    /* SideBar Colors */
+    --sidebar-background: 226 87% 9%; /* Midnight from Neon Precision */
+    --sidebar-foreground: 210 40% 82%; /* Slate from Neon Precision */
+    --sidebar-primary: 183 100% 50%; /* Aqua from Neon Precision */
+    --sidebar-primary-foreground: 226 87% 9%;
+    --sidebar-accent: 36 100% 61%; /* Orange from Neon Precision */
+    --sidebar-accent-foreground: 226 87% 9%;
+    --sidebar-border: 226 40% 15%;
+    --sidebar-ring: 183 100% 50%;
+
+    /* Chart Colors */
+    --chart-1: 183 100% 50%; /* Aqua */
+    --chart-2: 36 100% 61%; /* Orange */
+    --chart-3: 142 67% 54%; /* Success */
+    --chart-4: 196 83% 75%; /* Light blue */
+    --chart-5: 334 85% 55%; /* Pink */
+  }
+
+  .dark {
+    --background: 226 87% 9%; /* Midnight from Neon Precision */
+    --foreground: 210 40% 98%;
+    --card: 226 71% 14%;
+    --card-foreground: 210 40% 98%;
+    --popover: 226 71% 14%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 183 100% 50%; /* Aqua from Neon Precision */
+    --primary-foreground: 226 87% 9%;
+    --secondary: 226 57% 21%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 226 57% 21%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 36 100% 61%; /* Orange from Neon Precision */
+    --accent-foreground: 226 87% 9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 226 40% 25%;
+    --input: 226 40% 25%;
+    --ring: 183 100% 50%; /* Aqua from Neon Precision */
+
+    /* Same sidebar colors in dark mode for consistent sidebar appearance */
+    --sidebar-background: 226 87% 9%;
+    --sidebar-foreground: 210 40% 82%;
+    --sidebar-primary: 183 100% 50%;
+    --sidebar-primary-foreground: 226 87% 9%;
+    --sidebar-accent: 36 100% 61%;
+    --sidebar-accent-foreground: 226 87% 9%;
+    --sidebar-border: 226 40% 15%;
+    --sidebar-ring: 183 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .success-gradient {
+    @apply bg-gradient-to-r from-aqua to-success;
+  }
+  
+  .primary-gradient {
+    @apply bg-gradient-to-r from-aqua to-[#00D1FF];
+  }
+  
+  .accent-gradient {
+    @apply bg-gradient-to-r from-orange to-[#FFD27D];
+  }
+}
